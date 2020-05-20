@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 1em;
+    text-align: center;
+}
+
+.main>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container>div {
+    width: 560px;
+    margin: 0 auto;
+}
+
+.board {
+    border: 1px solid grey;
+    display: grid;
+    grid-template: repeat(8, 70px)/ repeat(8, 70px);
+}
+
+.board>div {
+    border: 0.5px solid grey;
+}
+
+.board, .defeted {
+    font-size: 50px;
+}
+
+.defeted {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.defeted>div {
+    width: 50%;
+}
+
+.black-col {
+    background-color: #bbb;
+}
+
+.selected {
+    background-color: cyan;
+}
+
+.user0, .user1 {
+    width: 30%;
+}
+
+.user0>div, .user1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user0 p, .user1 p {
+    background-color: green;
+    padding: 1em;
+    color: white;
+}
+
+#form input {
+    width: 100%;
+    margin: 1em 0;
+}
